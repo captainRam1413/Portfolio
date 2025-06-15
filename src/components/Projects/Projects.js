@@ -32,7 +32,7 @@ function Projects() {
               title="Jaraka"
               description="A web project designed to provide consultant services. The back-end is developed using Python Flask, with the database managed via SQLAlchemy. (July 2022)"
               ghLink="https://github.com/captainRam1413/flask-backend.git" // Add your GitHub link here
-              // demoLink="#" // Add your demo link here
+              demoLink="https://flask-backend-7kfr.onrender.com" 
             />
           </Col>
           <Col md={4} className="project-card">
@@ -58,12 +58,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={placeholderImg} // Replace with actual image path e.g., cardSecImg
+              isBlog={false}
+              title="CardSec"
+              description="Developed a cybersecurity-focused system for detecting credit card fraud, incorporating research from the dark web. The project integrates Stripe API to simulate real transactions and employs 4-5 machine learning models to predict fraudulent or legitimate transactions with 93.67 percent accuracy. Tech: Python, Tor, Machine Learning, Stripe API. (Dec ’24)"
+              ghLink="https://github.com/captainRam1413/Credit-Card-Fraud-Detection-Using-Machine-Learning.git" // Add your GitHub link here
+              demoLink="https://credit-card-fraud-detection-using-7wmf.onrender.com/" // Add your demo link here
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={placeholderImg} // Replace with actual image path e.g., genAiImg
               isBlog={false}
               title="GenAI-Circuite Simulator & Generator"
               description="Developed a logic simulation website powered by generative AI. Integrated APIs for real-time simulation and data processing. Provided an intuitive user interface for seamless logic simulations. Tech: PHP, JavaScript. (January 2024)"
-              ghLink="#" // Add your GitHub link here
-              demoLink="#" // Add your demo link here
+              // ghLink="#" 
+              // demoLink="#" 
             />
           </Col>
 
@@ -84,19 +95,8 @@ function Projects() {
               isBlog={false}
               title="HamBanjara"
               description="Android application created for the Banjara community to facilitate connections within the community. Tech: JAVA, Android Development. (May 2022)"
-              ghLink="#" // Add your GitHub link here
-              demoLink="#" // Add your demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={placeholderImg} // Replace with actual image path e.g., cardSecImg
-              isBlog={false}
-              title="CardSec"
-              description="Developed a cybersecurity-focused system for detecting credit card fraud, incorporating research from the dark web. The project integrates Stripe API to simulate real transactions and employs 4-5 machine learning models to predict fraudulent or legitimate transactions with 93.67 percent accuracy. Tech: Python, Tor, Machine Learning, Stripe API. (Dec ’24)"
-              ghLink="https://github.com/captainRam1413/Credit-Card-Fraud-Detection-Using-Machine-Learning.git" // Add your GitHub link here
-              demoLink="#" // Add your demo link here
+              // ghLink="#" 
+              // demoLink="#" 
             />
           </Col>
         </Row>

@@ -3,16 +3,18 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/icon.png";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+// import { CgGitFork } from "react-icons/cg";
+// import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
+  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+
+import { FaBriefcase } from "react-icons/fa";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -72,6 +74,19 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/exp"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaBriefcase
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -81,7 +96,6 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
