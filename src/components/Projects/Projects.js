@@ -47,6 +47,16 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={placeholderImg} // Replace with actual image path e.g., cardSecImg
+              isBlog={false}
+              title="CropPredict: Smart Agriculture Assistant"
+              description="A full-stack machine learning web application designed to assist farmers and agronomists in making data-driven agricultural decisions. The system predicts the most suitable crop and fertilizer combination based on district-level soil and weather conditions, helping improve yield and resource efficiency."
+              ghLink="https://github.com/captainRam1413/cropPredictFrontend" // Add your GitHub link here
+              demoLink="https://crop-predict-frontend.vercel.app/" // Add your demo link here
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={placeholderImg} 
               isBlog={false}
               title="TODO-List"
@@ -66,6 +76,7 @@ function Projects() {
               demoLink="https://credit-card-fraud-detection-using-7wmf.onrender.com/" // Add your demo link here
             />
           </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
